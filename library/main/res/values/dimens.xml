@@ -26,7 +26,7 @@
     <dimen name="suw_glif_button_margin_start">8dp</dimen>
     <dimen name="suw_glif_button_padding">16dp</dimen>
     <dimen name="suw_glif_footer_padding_vertical">8dp</dimen>
-    <dimen name="suw_glif_footer_min_height">80dp</dimen>
+    <dimen name="suw_glif_footer_min_height">72dp</dimen>
     <dimen name="suw_glif_margin_sides">24dp</dimen>
     <dimen name="suw_glif_margin_top">48dp</dimen>
 
@@ -134,5 +134,8 @@
     <!-- The margin to compensate for the padding built-in to the widget itself -->
     <dimen name="suw_progress_bar_margin_vertical">-7dp</dimen>
     <dimen name="suw_glif_progress_bar_margin_vertical">7dp</dimen>
+
+    <!-- Edit Text dimensions -->
+    <dimen name="suw_edit_text_min_height">56dp</dimen>
 
 </resources>

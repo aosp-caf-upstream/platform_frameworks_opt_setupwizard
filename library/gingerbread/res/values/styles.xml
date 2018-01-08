@@ -20,6 +20,7 @@
     <!-- General styles -->
 
     <style name="SuwThemeMaterial" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/suw_color_background_dark</item>
         <item name="android:indeterminateTint" tools:ignore="NewApi">@color/suw_progress_bar_color_dark</item>
         <!-- Specify the indeterminateTintMode to work around a bug in Lollipop -->
         <item name="android:indeterminateTintMode" tools:ignore="NewApi">src_in</item>
@@ -51,6 +52,7 @@
     </style>
 
     <style name="SuwThemeMaterial.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorBackground">@color/suw_color_background_light</item>
         <item name="android:indeterminateTint" tools:ignore="NewApi">@color/suw_progress_bar_color_light</item>
         <!-- Specify the indeterminateTintMode to work around a bug in Lollipop -->
         <item name="android:indeterminateTintMode" tools:ignore="NewApi">src_in</item>
@@ -151,6 +153,14 @@
         <item name="textAppearanceListItemSmall">@style/TextAppearance.SuwGlifItemSummary</item>
     </style>
 
+    <style name="SuwThemeGlifV3" parent="SuwThemeGlifV2">
+        <item name="colorAccent">@color/suw_color_accent_glif_v3</item>
+    </style>
+
+    <style name="SuwThemeGlifV3.Light" parent="SuwThemeGlifV2.Light">
+        <item name="colorAccent">@color/suw_color_accent_glif_v3</item>
+    </style>
+
     <!-- Content styles -->
 
     <style name="TextAppearance.SuwDescription" parent="TextAppearance.AppCompat.Medium">
@@ -197,6 +207,7 @@
              ContextThemeWrapper. These self-referencing attributes make sure this is applied as
              both to the button. -->
         <item name="android:buttonStyle">@style/SuwGlifButton.Primary</item>
+        <item name="android:theme">@style/SuwGlifButton.Primary</item>
         <item name="buttonStyle">@style/SuwGlifButton.Primary</item>
 
         <!-- Values used in styles -->
@@ -234,6 +245,13 @@
         <item name="android:background">?attr/colorPrimary</item>
     </style>
 
+    <style name="SuwBase.ProgressBarLarge" parent="@android:style/Widget.ProgressBar.Large" />
+
+    <style name="SuwFourColorIndeterminateProgressBar" parent="SuwBase.ProgressBarLarge">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
     <!-- Navigation bar styles -->
 
     <style name="SuwNavBarButtonStyle" parent="@android:style/Widget.Button">
@@ -258,4 +276,8 @@
         <item name="suwNavBarButtonBackground">@drawable/suw_navbar_btn_bg_light</item>
     </style>
 
+
+    <style name="SuwAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert" />
+
+    <style name="SuwAlertDialogTheme.Light" parent="Theme.AppCompat.Light.Dialog.Alert" />
 </resources>
